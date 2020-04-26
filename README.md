@@ -278,7 +278,7 @@ curl -X POST https://api.heroku.com/apps -H "Accept: application/vnd.heroku+json
 ## [Salesforce API key](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm)
 ```
 curl https://instance_name.salesforce.com/services/data/v20.0/ -H 'Authorization: Bearer access_token_here'
-curl https://https://login.salesforce.com/services/oauth2/userinfo -H 'Authorization: Bearer access_token_here'
+curl https://login.salesforce.com/services/oauth2/userinfo -H 'Authorization: Bearer access_token_here'
 ```
 ## [Algolia API key](https://www.algolia.com/doc/rest-api/search/#overview)
 
