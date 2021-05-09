@@ -293,6 +293,15 @@ curl --request PUT \
   --data '{"highlightPreTag": "<script>alert(1);</script>"}'
 ```
 
+To check the ACL of the key, just run the following python code.
+
+```
+from algoliasearch.search_client import SearchClient
+client = SearchClient.create('APP ID', 'API KEY')
+
+print(client.get_api_key('API KEY'))
+```
+
 ## [Zapier Webhook Token](https://zapier.com/help/how-get-started-webhooks-zapier/)
 ```
 curl -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d '{"name":"streaak"}' "webhook_url_here"
