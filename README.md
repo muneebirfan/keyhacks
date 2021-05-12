@@ -22,6 +22,7 @@ KeyHacks shows ways in which particular API keys found on a Bug Bounty Program c
 - [Google Cloud Messaging (GCM)](#Google-Cloud-Messaging)
 - [Google Maps API key](#Google-Maps-API-key)
 - [Heroku API key](#Heroku-API-key)
+- [Jira Api key](#Jira-API-key)
 - [MailGun Private Key](#MailGun-Private-Key)
 - [MailChimp API Key](#MailChimp-API-Key)
 - [Microsoft Shared Access Signatures (SAS)](#Microsoft-Shared-Access-Signatures-(SAS))
@@ -273,6 +274,14 @@ static void UseAccountSAS(string sasToken)
 ## [Heroku API key](https://devcenter.heroku.com/articles/platform-api-quickstart)
 ```
 curl -X POST https://api.heroku.com/apps -H "Accept: application/vnd.heroku+json; version=3" -H "Authorization: Bearer API_KEY_HERE"
+```
+
+## [Jira API key]
+```
+Construct an authorization header by base64 encoding the following string:
+LOGIN:API-KEY
+Go to https://TARGET.atlassian.net/secure/BrowseProjects.jspa and add the authorization header from the above to your HTTP request as:
+Authorization: Basic 'base64 encoded key'
 ```
 
 ## [Salesforce API key](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm)
